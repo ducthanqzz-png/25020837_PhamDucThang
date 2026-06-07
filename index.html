@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Kỹ Thuật Số - Phạm Đức Thắng</title>
+    <style>
+        :root { --primary: #1a4a38; --secondary: #2c7a5d; --bg: #f4f7f6; --text: #333; }
+        body { font-family: 'Segoe UI', system-ui, sans-serif; line-height: 1.6; color: var(--text); background: var(--bg); margin: 0; padding: 0; scroll-behavior: smooth; }
+        nav { background: var(--primary); position: sticky; top: 0; z-index: 100; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
+        nav ul { list-style: none; display: flex; justify-content: center; margin: 0; padding: 15px; }
+        nav ul li { margin: 0 20px; }
+        nav ul li a { color: white; text-decoration: none; font-weight: bold; font-size: 1.1em; transition: color 0.3s; }
+        nav ul li a:hover { color: #a8d5c2; }
+        header { background: linear-gradient(135deg, var(--primary), var(--secondary)); color: white; padding: 60px 20px; text-align: center; }
+        header h1 { margin: 0; font-size: 3em; letter-spacing: 1px; }
+        .container { max-width: 1000px; margin: 0 auto; padding: 30px 20px; }
+        section { background: white; padding: 40px; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); margin-bottom: 40px; transition: transform 0.3s; }
+        section:hover { transform: translateY(-3px); }
+        h2 { color: var(--primary); border-bottom: 2px solid var(--primary); padding-bottom: 10px; margin-top: 0; }
+        .project-item { border-left: 5px solid var(--secondary); padding-left: 20px; margin-bottom: 35px; background: #fafafa; padding-top: 15px; padding-bottom: 15px; padding-right: 15px; border-radius: 0 8px 8px 0; }
+        .project-item h3 { color: var(--secondary); margin-top: 0; }
+        .badge { background: var(--primary); color: white; padding: 4px 8px; border-radius: 4px; font-size: 0.85em; margin-right: 5px; }
+        .media-container { text-align: center; margin-top: 15px; padding: 20px; background: #eef2f0; border: 2px dashed #bdc3c7; border-radius: 8px; }
+        .media-container img { max-width: 100%; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <ul>
+            <li><a href="#gioi-thieu">Giới thiệu</a></li>
+            <li><a href="#du-an">Dự án & Minh chứng</a></li>
+            <li><a href="#tong-ket">Tổng kết</a></li>
+        </ul>
+    </nav>
+
+    <header>
+        <h1>PORTFOLIO KỸ THUẬT SỐ</h1>
+        <p>Tối ưu hóa trải nghiệm - Ứng dụng đa phương tiện</p>
+    </header>
+
+    <div class="container">
+        <section id="gioi-thieu">
+            <h2>I. Giới thiệu bản thân</h2>
+            <p><strong>Họ và tên:</strong> Phạm Đức Thắng</p>
+            <p><strong>Mã sinh viên:</strong> 25020837</p>
+            <p><strong>Trường/Ngành học:</strong> Đại học Công nghệ (UET) - ĐHQGHN</p>
+            <p><strong>Định hướng:</strong> Chuyên gia hệ thống, quản trị Linux và tối ưu hóa hạ tầng.</p>
+            <p><strong>Mục tiêu Portfolio:</strong> Không chỉ dừng ở việc lưu trữ bài tập, Portfolio này được xây dựng với mục tiêu tích hợp thiết kế UI/UX độc đáo, cấu trúc điều hướng logic liền mạch (smooth scrolling) nhằm mang lại trải nghiệm tương tác tốt nhất cho người dùng.</p>
+        </section>
+
+        <section id="du-an">
+            <h2>II. Các bài tập dự án</h2>
+
+            <div class="project-item">
+                <h3>1. Quản lý tệp và thư mục</h3>
+                <p><span class="badge">Cấu trúc khoa học</span> <span class="badge">Naming Convention</span></p>
+                <p><strong>Mô tả sâu sắc:</strong> Áp dụng tư duy quản trị hệ thống phân tầng (Hierarchical structure) tương tự Linux. Thiết lập quy tắc đặt tên tệp sáng tạo và đồng nhất: `YYYYMMDD_[Học_Phần]_[Tên_Dự_Án]_v1.0`. Sự chuẩn hóa này không chỉ giúp tổ chức dữ liệu gọn gàng mà còn là bước đệm thiết yếu để dễ dàng ứng dụng các script tự động hóa tìm kiếm/lọc file sau này.</p>
+                <div class="media-container">
+                    <img src="bai1.png" alt="Cấu trúc thư mục hệ thống khoa học">
+                </div>
+            </div>
+
+            <div class="project-item">
+                <h3>2. Tìm kiếm & Đánh giá thông tin</h3>
+                <p><span class="badge">Sử dụng >4 Toán tử</span> <span class="badge">Phân tích chuyên sâu</span></p>
+                <p><strong>Chiến lược tìm kiếm:</strong> Ứng dụng linh hoạt và kết hợp đồng thời nhiều toán tử nâng cao: `site:.edu.vn`, `filetype:pdf`, `intitle:"..."`, và toán tử loại trừ `-`. Về mặt đánh giá, không chỉ dừng ở bề nổi mà còn phân tích chéo thông qua chỉ số trích dẫn (citations) trên Google Scholar, đảm bảo độ tin cậy tuyệt đối của nguồn dữ liệu học thuật.</p>
+                <div class="media-container">
+                    <img src="bai2.png" alt="Minh chứng kết quả truy vấn đa toán tử">
+                </div>
+            </div>
+
+            <div class="project-item">
+                <h3>3. Viết Prompt hiệu quả</h3>
+                <p><span class="badge">Prompt Engineering</span> <span class="badge">So sánh cơ chế AI</span></p>
+                <p><strong>Ứng dụng & Phân tích:</strong> Áp dụng thành thạo các kỹ thuật Prompt Engineering nâng cao như Role-playing và Chain-of-Thought (Tư duy theo chuỗi). Sự khác biệt rõ rệt được lý giải qua cơ chế hoạt động của AI: Prompt cơ bản khiến LLM sinh nội dung rác do không gian vector phân tán; trong khi Prompt cấu trúc hóa thu hẹp Attention Mechanism, ép model tập trung xuất ra kết quả có độ chính xác và logic cao nhất.</p>
+                <div class="media-container">
+                    <img src="bai3.png" alt="Minh chứng so sánh kỹ thuật Prompt">
+                </div>
+            </div>
+
+            <div class="project-item">
+                <h3>4. Hợp tác trực tuyến</h3>
+                <p><span class="badge">Tích hợp tính năng</span> <span class="badge">Tối ưu quy trình Workflow</span></p>
+                <p><strong>Quy trình làm việc nhóm:</strong> Tối ưu hóa quy trình làm việc bằng cách tích hợp các tính năng nâng cao như automation (tự động hóa) trên Trello/GitHub. Thiết lập ma trận phân quyền rõ ràng, sử dụng Label, Due Date và Checklists chi tiết giúp theo dõi tracking tiến độ realtime, loại bỏ hoàn toàn các nút thắt (bottlenecks) trong giao tiếp dự án.</p>
+                <div class="media-container">
+                    <img src="bai4.png" alt="Minh chứng tích hợp công cụ quản lý dự án">
+                </div>
+            </div>
+            
+            <div class="project-item">
+                <h3>5. Sáng tạo nội dung số & Trách nhiệm AI</h3>
+                <p><span class="badge">Đa phương tiện</span> <span class="badge">Liêm chính học thuật</span></p>
+                <p><strong>Phân tích:</strong> Kết hợp Generative AI vào luồng sản xuất đa phương tiện nhưng duy trì sự kiểm duyệt khắt khe (Human-in-the-loop). Cam kết tuyệt đối với các nguyên tắc liêm chính học thuật, xác minh fact-checking chéo và trích dẫn minh bạch đối với mọi dữ liệu do AI khởi tạo.</p>
+                <div class="media-container">
+                    <img src="bai5.png" alt="Sản phẩm AI có trách nhiệm">
+                </div>
+            </div>
+        </section>
+
+        <section id="tong-ket">
+            <h2>III. Tổng kết dự án</h2>
+            <p>Việc hoàn thiện Portfolio này không chỉ là một bài tập tổng hợp mà là quá trình "hệ thống hóa" lại tư duy công nghệ. Từ việc hiểu sâu cấu trúc file, làm chủ thuật toán tìm kiếm, đến việc điều khiển AI qua Prompt Engineering — tất cả tạo thành một chuỗi kỹ năng khép kín (Full-stack skillset) giúp tối ưu hóa hiệu suất nghiên cứu và sẵn sàng thích ứng với các hệ thống kỹ thuật phức tạp trong tương lai.</p>
+        </section>
+    </div>
+
+</body>
+</html>
